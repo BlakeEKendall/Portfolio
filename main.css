@@ -1,0 +1,462 @@
+/*
+Color Palette
+https://coolors.co/f2f4f3-364652-212227-5e503f-006494
+#F2F4F3 = Anti-flash White
+#364652 = Charcoal - medium gray
+#212227 = Raisin Black
+#5E503F = Umber - brown
+#005B87 = Sea Blue
+*/
+
+
+
+/* Global 
+-----------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #27282e;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 400;
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Navigation
+------------------------------*/
+.navbar {
+    background-color: #212227;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-family: 'Fredericka the Great', cursive;
+    /* transition: color 1s; */
+}
+
+/* .navbar-brand:hover {
+    color: #005B87;
+} */
+
+.navbar-nav {
+    transition: color 1s;
+    transition: transform 0.5s;
+    font-size: 1.2em;
+}
+
+.nav-item:hover {
+    color: #5E503F;
+    background-color: #364652;
+    border-radius: 4px;
+    transform: scale(1.07); 
+    -ms-transform: scale(1.07); 
+    -webkit-transform: scale(1.07); 
+}
+
+.nav-item {
+    margin: auto 1.5em;
+}
+
+
+/* Header
+------------------------------*/
+#Header .content {    
+	background: #212227;
+	color: #F2F4F3;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.25;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+.content .large-header {
+	background-image: url('./Assets/jonatan-pie-3l3RwQdHRHg-unsplash.jpg');
+}
+
+#main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+}
+
+#main-title .thin {
+	font-weight: 200;
+	line-height: 1.5em;
+}
+
+#main-title .subtitle {
+	font-size: 0.5em;
+	font-weight: 200;
+}
+
+
+
+/* Profile 
+-----------------------------*/
+#AboutMe {
+	background-color: #005B87;
+    padding-bottom: 2rem;
+    
+}
+
+#AboutMe h1 {
+	color: #F2F4F3;
+	/* font-family: 'Fredericka the Great', cursive; */
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#profileHeaderUnderline {
+	width: 15rem;
+    /* display: block; */
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #364652;
+    margin: 2em auto;
+    padding: 0;
+}
+
+#profilePhotoContainer {
+	padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+}
+
+#profilePhotoContainer img {
+	/* width: 100%; */
+    border-width: 2px 2px 1px 2px;
+    border-style: solid;
+    border-color: #5E503F;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+	/* outline-offset: -1.5rem; */
+}
+
+
+#profileNamePositionBox {
+	background-color: #212227;
+	outline: 1px solid #364652;
+	outline-offset: -1.5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+    margin-bottom: 5rem;
+    border-width: 1px 2px 2px 2px;
+    border-style: solid;
+    border-color: #5E503F;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#profileNamePositionBox p span {
+	color: #F2F4F3;
+	letter-spacing: 0.1rem;
+}
+
+#profileNamePositionBox p {
+	color: #5E503F;
+	padding-left: 3rem;
+	padding-right: 3rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9em;
+	letter-spacing: 0.08rem;
+}
+
+#profileNamePositionBox div:first-of-type p {
+	padding-top: 1rem;
+}
+
+#profileNamePositionBox hr {
+	width: 75%;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #364652;
+    margin: 1em auto;
+    padding: 0;
+	padding-left: -1rem;
+	padding-right: -1rem;
+}
+
+#AboutMe h2 {
+	color: #F2F4F3;
+	/* font-family: 'Fredericka the Great', cursive; */
+	/* font-weight: 700; */
+	font-size: 2rem;
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#profileIntroUnderline {
+	margin-top: 0.5rem;
+	width: 5.5rem;
+	float: left;
+    display: block;
+    border: 0;
+    border-bottom: 1.75px solid #364652;
+    margin-bottom: 0;
+}
+
+#profileIntroUnderline + br + p {
+	text-align: left;
+	color: #F2F4F3;
+	padding-right: 5rem;
+	font-family: 'Oswald', sans-serif;;
+	letter-spacing: 0.08rem;
+	font-size: 1.75rem;
+	font-weight: 200; 
+}
+
+#profileIntroUnderline + br + p span {
+	font-size: 1.75rem;
+	font-weight: 400;
+}
+
+#profileDescription a {
+    color: #212227;
+    background-color: #F2F4F3;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+    transition: color 0.5s;
+}
+
+#profileDescription a:link,
+#profileDescription a:visited {
+	opacity: 1;
+	color: #364652;
+}
+
+#profileDescription a:hover,
+#profileDescription a:active {
+	opacity: 0.8;
+    color: #F2F4F3;
+    background-color: #005B87;
+    border: 1px solid #212227;
+    border-radius: 4px;
+}
+
+#profileDivider {
+	width: 10rem;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #364652;
+    margin: 2em;
+    margin-left: 0;
+    padding: 0;
+}
+
+#profileDescription {
+	color: #F2F4F3;
+	font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.08rem;
+    font-size: 1rem;
+	text-align: left;
+	padding-right: 5rem;
+	padding-bottom: 5rem;
+}
+
+#profileSkillsUnderline {
+	margin-top: 0.5rem;
+	width: 7rem;
+	float: left;
+    display: block;
+    border: 0;
+    border-bottom: 1.75px solid #364652;
+    margin-bottom: 0;
+}
+
+#skillsRow {
+	padding-bottom: 5rem;
+}
+
+#skillsRow .fab {
+    font-size: 3rem;
+    margin: 1.5rem;
+    color: #F2F4F3;
+    
+    
+}
+
+
+/* Project 
+-----------------------------*/
+#Projects {
+    padding: 10px;
+    margin-bottom: 2em;
+}
+
+#Projects h1 {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.figure-caption {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+#Projects img {
+    padding: 0.5rem;
+    padding-bottom: 3rem;
+    position: relative;
+    text-align: center;
+    color: #888;
+    transition: transform 1s;
+}
+
+#Projects img:hover {
+    transform: scale(1);
+    -ms-transform: scale(1.07); 
+    -webkit-transform: scale(1.07); 
+}
+
+/* Contact Info
+-----------------------------*/
+#Contact {
+	/* text-align: center; */
+	background-color: #212227;
+	padding-bottom: 5rem;
+}
+
+#Contact h1 {
+	color: #F2F4F3;
+	text-align: center;
+	/* font-family: 'Fredericka the Great', cursive; */
+	padding-top: 2rem;
+}
+
+#contactHeaderUnderline {
+	width: 15rem;
+	display: block;
+	height: 2px;
+	border: 0;
+	border-top: 2px solid #5E503F;
+	margin: 2em auto;
+	padding-bottom: 2rem;
+}
+
+#Contact form .row {
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Contact .form-control {
+	margin: 2rem;
+	background-color: #364652;
+	border: 1px solid #364652;
+}
+
+#Contact .form-control {
+	margin: 2rem;
+	background-color: #364652;
+	border: 1px solid #364652;
+	box-shadow: 1px solid #444;
+}
+
+#Contact button {
+	background-color: #F2F4F3;
+	color: #212227;
+	opacity: 1;
+    transition: opacity 0.5s;
+    transition: transform 1s;
+}
+
+#Contact button:hover {
+	background-color: #005B87;
+	opacity: 0.8;
+    color: #F2F4F3;
+    -ms-transform: scale(1.07); 
+    -webkit-transform: scale(1.07); 
+    transform: scale(1.07); 
+}
+
+#Contact button:active,
+#Contact button:focus {
+	background-color: #005B87;
+	opacity: 0.6;
+	color: #F2F4F3;
+	box-shadow: 1px solid #444;
+}
+
+
+
+/* Footer
+-----------------------------*/
+#Footer {
+	background-color: #364652; 
+	color: #212227;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#Footer i {
+	font-size: 3rem;
+	color:#F2F4F3;
+	padding: 1rem;
+	margin: 1rem auto 1rem;
+	transition: color 0.5s;
+    display: inline-block;
+    
+}
+
+#Footer i:hover {
+    color: #005B87;
+    
+}
+
+#Footer a{
+    color: #F2F4F3;
+    transition: color 0.5s;
+}
+
+#Footer a:hover {
+    color: #005B87;
+    text-decoration: none;
+}
+
+#Footer > p:first-of-type {
+    margin-top: 1.4em;
+}
+
+
+
+/* Responsive
+-----------------------------*/
+@media only screen and (max-width : 768px) {
+	#main-title {
+		font-size: 3em;
+	}
+}
