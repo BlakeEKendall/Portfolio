@@ -67,6 +67,16 @@ h1, h2 {
     margin: auto 1.5em;
 }
 
+/*added 5-04-2020*/
+/*keep navbar from hiding section titles*/
+#Header::before, #AboutMe::before, #Projects::before, #Contact::before {
+display: block;
+content: " ";
+margin-top: -65px;
+height: 65px;
+visibility: hidden;
+}
+
 
 /* Header
 ------------------------------*/
