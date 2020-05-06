@@ -5,27 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Blake's Portfolio</title>
-        <script type="text/javascript">
-            var urls = [
-                "https://xkcd.com/",
-                'https://io9.gizmodo.com/',
-                'https://www.penny-arcade.com/',
-                'https://www.tor.com/',
-                'https://create.adobe.com/2020/04/06/coloring_book_alphabet.html',
-                'https://www.tested.com/',
-                'http://www.welcometonightvale.com/',
-                'https://www.astonishinglegends.com/',
-                'http://journal.neilgaiman.com/',
-                'https://www.youtube.com/watch?v=U76nIDJQcxQ&list=PLbp_QhwRhV_wajfL7MFgH3tFVgcy3M6ss'
-            ];
-        
-            function goSomewhere() {
-                var url = urls[Math.floor(Math.random()*urls.length)];
-                window.location = url; // redirect
-            }
-        </script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/bdbdfa722c.js" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oswald&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
@@ -43,7 +26,7 @@
                         <li class="nav-item active"><a class="nav-link" href="#AboutMe">About Me</a></li>
                         <li class="nav-item active"><a class="nav-link" href="#Projects">Projects</a></li>
                         <li class="nav-item active"><a class="nav-link" href="#Contact">Contact</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#" onClick="goSomewhere(); return false;">Random</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#Random" onClick="goRandom(); return false;">Random</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +48,7 @@
             <div class="container-fluid">
                 <div class="row mx-auto">
                     <div class="col mx-auto">
-                        <h1>Profile</h1>
+                        <h1>About Me</h1>
                         <hr id="profileHeaderUnderline">
                     </div>
                 </div>
@@ -75,13 +58,13 @@
                             <img src="./Assets/BKendall profile pic.jpg" class="img-fluid rounded-top" alt="Picture of Blake">
                             <div id="profileNamePositionBox">
                                 <div>
-                                    <p><span>Name: </span>Blake Kendall</p>
+                                    <p>Name: Blake Kendall</p>
                                 </div>
                                 
                                 <hr>
         
                                 <div>
-                                    <p><span>Position: </span>.Net Developer</p>
+                                    <p>Position: Net Developer</p>
                                 </div>
                                 
                             </div>
@@ -93,17 +76,20 @@
                         <br>
                         <p><span>Hi, my name is Blake Kendall. I am a junior .Net developer.</span><br><br>I am currently a student in the Eleven Fifty Academy's Software Development Bootcamp, gaining the knowledge and tools needed to become a successful Microsoft .NET software developer. I am learning to make console applications and test programs, and am excited to apply my skills in the professional sphere on completion of this course.</p>
                         <hr id="profileDivider">
-                        <p id="profileDescription">My current day job is as the Community Business Coordinator for the River Crossing Barnes & Noble in Indianapolis, and previously I worked as a Pro Services sales associate for Lowes in Bloomington, IN. 
+                        <p id="profileDescription">My current day job is as the Community Business Coordinator for the River Crossing Barnes & Noble in Indianapolis, and previously I worked as a Pro Services sales associate for Lowe's Home Improvement in Bloomington, IN. 
                             I have some experience installing, configuring, and troubleshooting computer hardware and software. 
-                            Technologies and tools that I have used include: .Net Framework C#, HTML, CSS, Bootstrap, Visual Studio, VS Code, Github, Microsoft Office, and Microsoft operating systems.<br><br>Find my <a href="./Assets/BlakeEKendall resume 2020.pdf" target="_blank">resume</a> here.</p>
+                            Technologies and tools that I have used include: .Net Framework C#, HTML, CSS, Bootstrap, Visual Studio, VS Code, Github, Microsoft Office, and Microsoft operating systems.<br><br>Find my <a id="myResume" href="./Assets/BlakeEKendall resume 2020.pdf" target="_blank">resume</a> here.</p>
                         <h2>SKILLS</h2>
                         <hr id="profileSkillsUnderline">
                         <br>
                         <div id="skillsRow" class="row">
                             <div class="col">
-                                <i class="fab fa-github"></i>
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-bootstrap"></i>
+                                <!-- <a title="Header" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="Some content">Hover over me</a> -->
+                                <i id="skillIcon" class="fab fa-github" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i>
+                                <i id="skillIcon" class="fab fa-html5" data-toggle="tooltip" data-placement="bottom" title="HTML5 & CSS"></i>
+                                <i id="skillIcon" class="fab fa-bootstrap" data-toggle="tooltip" data-placement="bottom" title="Bootstrap"></i>
+                                <i id="skillIcon" class="devicon-csharp-plain" data-toggle="tooltip" data-placement="bottom" title="C# & .Net Framework"></i>
+                                <i id="skillIcon" class="devicon-visualstudio-plain" data-toggle="tooltip" data-placement="bottom" title="Visual Studio & VS Code"></i>
                             </div>
                         </div>
                     </div>
@@ -207,5 +193,10 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="popover"]').popover();
+            });
+            </script>
     </body>
 </html>      

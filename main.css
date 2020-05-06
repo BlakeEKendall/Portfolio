@@ -146,11 +146,11 @@ visibility: hidden;
 }
 
 #profileHeaderUnderline {
-	width: 13rem;
+	width: 15rem;
     /* display: block; */
     height: 2px;
     border: 0;
-    border-top: 2px solid #364652;
+    border-top: 3px solid #364652;
     margin: 2em auto;
     padding: 0;
 }
@@ -186,18 +186,18 @@ visibility: hidden;
     border-bottom-left-radius: 5px;
 }
 
-#profileNamePositionBox p span {
+/* #profileNamePositionBox p span {
 	color: #F2F4F3;
 	letter-spacing: 0.1rem;
-}
+} */
 
 #profileNamePositionBox p {
-	color: #5E503F;
-	padding-left: 3rem;
-	padding-right: 3rem;
+	color: #F2F4F3;
+	padding-left: 2.1rem;
+	padding-right: 1rem;
     font-family: 'Oswald', sans-serif;
-    font-size: 0.9em;
-	letter-spacing: 0.08rem;
+    font-size: 1.1rem;
+	letter-spacing: 0.1rem;
 }
 
 #profileNamePositionBox div:first-of-type p {
@@ -251,7 +251,7 @@ visibility: hidden;
 	font-weight: 400;
 }
 
-#profileDescription a {
+#myResume {
     color: #212227;
     background-color: #F2F4F3;
     text-decoration: none;
@@ -260,14 +260,14 @@ visibility: hidden;
     transition: color 0.5s;
 }
 
-#profileDescription a:link,
-#profileDescription a:visited {
+#myResume:link,
+#myResume:visited {
 	opacity: 1;
 	color: #364652;
 }
 
-#profileDescription a:hover,
-#profileDescription a:active {
+#myResume:hover,
+#myResume:active {
 	opacity: 0.8;
     color: #F2F4F3;
     background-color: #005B87;
@@ -280,7 +280,7 @@ visibility: hidden;
     display: block;
     height: 2px;
     border: 0;
-    border-top: 2px solid #364652;
+    border-top: 3px solid #364652;
     margin: 2em;
     margin-left: 0;
     padding: 0;
@@ -310,7 +310,7 @@ visibility: hidden;
 	padding-bottom: 5rem;
 }
 
-#skillsRow .fab {
+#skillIcon {
     font-size: 3rem;
     margin: 1.5rem;
     color: #F2F4F3;
@@ -371,7 +371,7 @@ visibility: hidden;
 	display: block;
 	height: 2px;
 	border: 0;
-	border-top: 2px solid #5E503F;
+	border-top: 3px solid #5E503F;
 	margin: 2em auto;
 	padding-bottom: 2rem;
 }
@@ -468,5 +468,11 @@ visibility: hidden;
 @media only screen and (max-width : 768px) {
 	#main-title {
 		font-size: 3em;
+	}
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
 	}
 }
