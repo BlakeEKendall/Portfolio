@@ -134,14 +134,14 @@ visibility: hidden;
 -----------------------------*/
 #AboutMe {
 	background-color: #005B87;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     
 }
 
 #AboutMe h1 {
 	color: #F2F4F3;
 	/* font-family: 'Fredericka the Great', cursive; */
-    padding-top: 2rem;
+    padding-top: 2.3rem;
     text-align: center;
 }
 
@@ -321,12 +321,12 @@ visibility: hidden;
 /* Project 
 -----------------------------*/
 #Projects {
-    padding: 10px;
+    /* padding: 20px; */
     margin-bottom: 5rem;
 }
 
 #Projects h1 {
-    margin-top: 2rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
@@ -343,6 +343,10 @@ visibility: hidden;
 .figure-caption {
     font-size: 1.3em;
     margin-bottom: 1em;
+}
+
+#projectIconsRow {
+	padding: 1em;
 }
 
 #Projects img {
@@ -485,3 +489,7 @@ visibility: hidden;
 		scroll-behavior: auto;
 	}
 }
+
+/* @media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+} */
