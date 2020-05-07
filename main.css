@@ -1,11 +1,11 @@
 /*
 Color Palette
 https://coolors.co/f2f4f3-364652-212227-5e503f-006494
-#F2F4F3 = Anti-flash White
+#F2F4F3 = Cultured - white
 #364652 = Charcoal - medium gray
 #212227 = Raisin Black
 #5E503F = Umber - brown
-#005B87 = Sea Blue
+#005B87 = Blue Sapphire
 */
 
 
@@ -252,18 +252,19 @@ visibility: hidden;
 }
 
 #myResume {
-    color: #212227;
+    color: #005B87;
     background-color: #F2F4F3;
     text-decoration: none;
     padding: 6px;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: color 0.5s;
 }
 
 #myResume:link,
 #myResume:visited {
 	opacity: 1;
-	color: #364652;
+	color: #F2F4F3;
+	background-color: #212227;
 }
 
 #myResume:hover,
@@ -271,8 +272,8 @@ visibility: hidden;
 	opacity: 0.8;
     color: #F2F4F3;
     background-color: #005B87;
-    border: 1px solid #212227;
-    border-radius: 4px;
+    border: 1.2px solid #212227;
+    border-radius: 10px;
 }
 
 #profileDivider {
