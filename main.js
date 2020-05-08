@@ -18,4 +18,4 @@ function goRandom() {
     window.location = url; // redirect
 }
 
-/*Bootstrap functions*/
+/*Weather Widget code*/
