@@ -156,18 +156,18 @@ visibility: hidden;
 }
 
 #profilePhotoContainer {
-	padding-left: 1rem;
-    padding-right: 1rem;
+	padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin-left: 1rem;
 }
 
 #profilePhotoContainer img {
 	/* width: 100%; */
-    border-width: 2px 2px 1px 2px;
+    border-width: 2.5px 2.5px 1.5px 2.5px;
     border-style: solid;
     border-color: #5E503F;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 	/* outline-offset: -1.5rem; */
 }
 
@@ -179,11 +179,11 @@ visibility: hidden;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
     margin-bottom: 5rem;
-    border-width: 1px 2px 2px 2px;
+    border-width: 1px 2.5px 2.5px 2.5px;
     border-style: solid;
     border-color: #5E503F;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 /* #profileNamePositionBox p span {
@@ -442,7 +442,7 @@ visibility: hidden;
 	background-color: #364652; 
 	color: #212227;
 	text-align: center;
-	padding-top: 0.5em;
+	padding-top: 0.2em;
 	padding-bottom: 0.5em;
 }
 
