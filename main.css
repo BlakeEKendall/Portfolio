@@ -444,15 +444,18 @@ visibility: hidden;
 }
 
 #socialIcons {
+	display: inline-block;
+}
+
+#socialIcons i{
 	font-size: 3rem;
 	color:#F2F4F3;
 	padding: 0.5rem;
-	margin: 0.5rem 1rem;
+	margin: 0.6rem 1rem;
 	transition: color 0.5s;
-    display: inline-block;
 }
 
-#socialIcons:hover {
+#socialIcons i:hover {
     color: #005B87;
 }
 
