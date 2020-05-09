@@ -276,7 +276,7 @@ visibility: hidden;
     background-color: #F2F4F3;
     text-decoration: none;
     padding: 6px;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: color 0.5s;
 }
 
@@ -293,7 +293,7 @@ visibility: hidden;
     color: #F2F4F3;
     background-color: #005B87;
     border: 1.2px solid #212227;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #profileDivider {
