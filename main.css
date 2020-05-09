@@ -444,7 +444,6 @@ visibility: hidden;
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	height: 210px;
 }
 
 #footerIconRow {
@@ -492,9 +491,9 @@ visibility: hidden;
 	}
 }
 
-/* @media screen and (prefers-reduced-motion: reduce) {
+@media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
 	}
-} */
+}
 
