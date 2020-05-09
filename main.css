@@ -1,6 +1,6 @@
 /*
 Color Palette
-https://coolors.co/f2f4f3-364652-212227-5e503f-006494
+https://coolors.co/f2f4f3-364652-212227-5e503f-005b87
 #F2F4F3 = Cultured - white
 #364652 = Charcoal - medium gray
 #212227 = Raisin Black
@@ -22,7 +22,7 @@ body {
     padding: 0;
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+	line-height: 1.5;
 }
 
 h1, h2 {
@@ -31,6 +31,7 @@ h1, h2 {
     font-size: 3.5em;
     margin: 0;
 }
+
 
 /* Navigation
 ------------------------------*/
@@ -41,12 +42,8 @@ h1, h2 {
 
 .navbar-brand {
     font-family: 'Fredericka the Great', cursive;
-    /* transition: color 1s; */
 }
 
-/* .navbar-brand:hover {
-    color: #005B87;
-} */
 
 .navbar-nav {
     transition: color 1s;
@@ -67,28 +64,7 @@ h1, h2 {
     margin: auto 1.5em;
 }
 
-/* .btn-dark {
-	font-size: 1em;
-	margin: auto 1.5em;
-	border: none;
-	background-color: transparent;
-} */
-
-/* .btn-dark:hover {
-    background-color: #364652;
-    border-radius: 4px;
-    transform: scale(1.07); 
-    -ms-transform: scale(1.07); 
-    -webkit-transform: scale(1.07); 
-}
-
-.btn-dark:visited {
-	border: none;
-	background-color: transparent;
-} */
-
-/*added 5-04-2020*/
-/*keep navbar from hiding section titles*/
+/*Prevents navbar from hiding section titles*/
 #Header::before, #AboutMe::before, #Projects::before, #Contact::before {
 display: block;
 content: " ";
@@ -160,14 +136,12 @@ visibility: hidden;
 
 #AboutMe h1 {
 	color: #F2F4F3;
-	/* font-family: 'Fredericka the Great', cursive; */
     padding-top: 2.3rem;
     text-align: center;
 }
 
 #profileHeaderUnderline {
 	width: 17rem;
-    /* display: block; */
     height: 2px;
     border: 0;
     border-top: 3px solid #364652;
@@ -182,7 +156,6 @@ visibility: hidden;
 }
 
 #profilePhotoContainer img {
-	/* width: 100%; */
     border-width: 2.5px 2.5px 1.5px 2.5px;
     border-style: solid;
     border-color: #5E503F;
@@ -238,8 +211,6 @@ visibility: hidden;
 
 #AboutMe h2 {
 	color: #F2F4F3;
-	/* font-family: 'Fredericka the Great', cursive; */
-	/* font-weight: 700; */
 	font-size: 2rem;
 	text-align: left;
 	margin-top: 0;
@@ -283,8 +254,6 @@ visibility: hidden;
 #myResume:link,
 #myResume:visited {
 	opacity: 1;
-	/* color: #F2F4F3;
-	background-color: #212227; */
 }
 
 #myResume:hover,
@@ -335,13 +304,12 @@ visibility: hidden;
     font-size: 3rem;
     margin: 2rem;
 	color: #F2F4F3;
-	/* pointer-events: auto; */
 }
+
 
 /* Project 
 -----------------------------*/
 #Projects {
-    /* padding: 20px; */
     margin-bottom: 5rem;
 }
 
@@ -369,12 +337,15 @@ visibility: hidden;
 	padding: 1em;
 }
 
+
 #Projects img {
-    padding: 0.5rem;
-    padding-bottom: 3rem;
+	/*img starts at size: 739px x 531px*/
+    padding: 0.1rem;
+    margin-bottom: 3rem;
     position: relative;
     text-align: center;
-    color: #888;
+	color: #888;
+	border: 1px inset black;
     transition: transform 1s;
 }
 
@@ -384,10 +355,10 @@ visibility: hidden;
     -webkit-transform: scale(1.07); 
 }
 
+
 /* Contact Info
 -----------------------------*/
 #Contact {
-	/* text-align: center; */
 	background-color: #212227;
 	padding-bottom: 5rem;
 }
@@ -395,7 +366,6 @@ visibility: hidden;
 #Contact h1 {
 	color: #F2F4F3;
 	text-align: center;
-	/* font-family: 'Fredericka the Great', cursive; */
 	padding-top: 2rem;
 }
 
@@ -453,13 +423,15 @@ visibility: hidden;
 	box-shadow: 1px solid #444;
 }
 
-/*WeatherWidget*/
 
+/*WeatherWidget in Modal pop-up
+-------------------------------*/
 #widgetCol  a{
 	height: 100%;
 	width: 300px;
 	margin-left: 4.5rem;
 }
+
 
 /* Footer
 -----------------------------*/
@@ -500,7 +472,6 @@ visibility: hidden;
 }
 
 
-
 /* Responsive
 -----------------------------*/
 @media only screen and (max-width : 768px) {
@@ -509,12 +480,9 @@ visibility: hidden;
 	}
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
+/* @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
 	}
-}
-
-/* @media screen and (max-width: 768px) {
-    body { padding-top: 0px; }
 } */
+
