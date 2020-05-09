@@ -345,7 +345,7 @@ visibility: hidden;
     position: relative;
     text-align: center;
 	color: #888;
-	border: 1px inset black;
+	border: 1px inset #212227;
     transition: transform 1s;
 }
 
