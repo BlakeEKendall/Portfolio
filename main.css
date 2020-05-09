@@ -443,24 +443,26 @@ visibility: hidden;
 	padding-bottom: 1em;
 }
 
-#socialIcons {
-	display: inline-block;
-}
 
-#socialIcons i{
+#socialIcons {
 	font-size: 3em;
 	color:#F2F4F3;
 	padding: 0.5rem;
-	margin: 1rem 1rem;
+	
 	transition: color 0.5s;
 }
 
-#socialIcons i:hover {
-    color: #005B87;
+#socialIcons:hover {
+	color: #005B87;
+	text-decoration: none;
+}
+
+#socialIcons i {
+	margin: 1rem 1rem;
 }
 
 #copyrightDate {
-    color: #F2F4F3;
+	color: #F2F4F3;
     transition: color 0.5s;
 }
 
