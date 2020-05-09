@@ -1,11 +1,11 @@
 /*
 Color Palette
-https://coolors.co/f2f4f3-364652-212227-5e503f-006494
-#F2F4F3 = Anti-flash White
+https://coolors.co/f2f4f3-364652-212227-5e503f-005b87
+#F2F4F3 = Cultured - white
 #364652 = Charcoal - medium gray
 #212227 = Raisin Black
 #5E503F = Umber - brown
-#005B87 = Sea Blue
+#005B87 = Blue Sapphire
 */
 
 
@@ -22,15 +22,16 @@ body {
     padding: 0;
     font-family: 'Oswald', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+	line-height: 1.5;
 }
 
 h1, h2 {
     font-family: 'Fredericka the Great', cursive;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0;
 }
+
 
 /* Navigation
 ------------------------------*/
@@ -41,12 +42,8 @@ h1, h2 {
 
 .navbar-brand {
     font-family: 'Fredericka the Great', cursive;
-    /* transition: color 1s; */
 }
 
-/* .navbar-brand:hover {
-    color: #005B87;
-} */
 
 .navbar-nav {
     transition: color 1s;
@@ -55,7 +52,6 @@ h1, h2 {
 }
 
 .nav-item:hover {
-    color: #5E503F;
     background-color: #364652;
     border-radius: 4px;
     transform: scale(1.07); 
@@ -64,7 +60,17 @@ h1, h2 {
 }
 
 .nav-item {
+	padding: auto;
     margin: auto 1.5em;
+}
+
+/*Prevents navbar from hiding section titles*/
+#Header::before, #AboutMe::before, #Projects::before, #Contact::before {
+display: block;
+content: " ";
+margin-top: -65px;
+height: 65px;
+visibility: hidden;
 }
 
 
@@ -124,40 +130,37 @@ h1, h2 {
 -----------------------------*/
 #AboutMe {
 	background-color: #005B87;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     
 }
 
 #AboutMe h1 {
 	color: #F2F4F3;
-	/* font-family: 'Fredericka the Great', cursive; */
-    padding-top: 2rem;
+    padding-top: 2.3rem;
     text-align: center;
 }
 
 #profileHeaderUnderline {
-	width: 15rem;
-    /* display: block; */
+	width: 17rem;
     height: 2px;
     border: 0;
-    border-top: 2px solid #364652;
+    border-top: 3px solid #364652;
     margin: 2em auto;
     padding: 0;
 }
 
 #profilePhotoContainer {
-	padding-left: 1rem;
-    padding-right: 1rem;
+	padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin-left: 1rem;
 }
 
 #profilePhotoContainer img {
-	/* width: 100%; */
-    border-width: 2px 2px 1px 2px;
+    border-width: 2.5px 2.5px 1.5px 2.5px;
     border-style: solid;
     border-color: #5E503F;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 	/* outline-offset: -1.5rem; */
 }
 
@@ -169,25 +172,25 @@ h1, h2 {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
     margin-bottom: 5rem;
-    border-width: 1px 2px 2px 2px;
+    border-width: 1px 2.5px 2.5px 2.5px;
     border-style: solid;
     border-color: #5E503F;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-#profileNamePositionBox p span {
+/* #profileNamePositionBox p span {
 	color: #F2F4F3;
 	letter-spacing: 0.1rem;
-}
+} */
 
 #profileNamePositionBox p {
-	color: #5E503F;
-	padding-left: 3rem;
-	padding-right: 3rem;
+	color: #F2F4F3;
+	padding-left: 1rem;
+	padding-right: 1rem;
     font-family: 'Oswald', sans-serif;
-    font-size: 0.9em;
-	letter-spacing: 0.08rem;
+    font-size: 1.1rem;
+	letter-spacing: 0.1rem;
 }
 
 #profileNamePositionBox div:first-of-type p {
@@ -208,8 +211,6 @@ h1, h2 {
 
 #AboutMe h2 {
 	color: #F2F4F3;
-	/* font-family: 'Fredericka the Great', cursive; */
-	/* font-weight: 700; */
 	font-size: 2rem;
 	text-align: left;
 	margin-top: 0;
@@ -218,11 +219,11 @@ h1, h2 {
 
 #profileIntroUnderline {
 	margin-top: 0.5rem;
-	width: 5.5rem;
+	width: 6.5rem;
 	float: left;
     display: block;
     border: 0;
-    border-bottom: 1.75px solid #364652;
+    border-bottom: 1.8px solid #364652;
     margin-bottom: 0;
 }
 
@@ -241,28 +242,27 @@ h1, h2 {
 	font-weight: 400;
 }
 
-#profileDescription a {
-    color: #212227;
+#myResume {
+    color: #005B87;
     background-color: #F2F4F3;
     text-decoration: none;
     padding: 6px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: color 0.5s;
 }
 
-#profileDescription a:link,
-#profileDescription a:visited {
+#myResume:link,
+#myResume:visited {
 	opacity: 1;
-	color: #364652;
 }
 
-#profileDescription a:hover,
-#profileDescription a:active {
+#myResume:hover,
+#myResume:active {
 	opacity: 0.8;
     color: #F2F4F3;
     background-color: #005B87;
-    border: 1px solid #212227;
-    border-radius: 4px;
+    border: 1.2px solid #212227;
+    border-radius: 5px;
 }
 
 #profileDivider {
@@ -270,7 +270,7 @@ h1, h2 {
     display: block;
     height: 2px;
     border: 0;
-    border-top: 2px solid #364652;
+    border-top: 3px solid #364652;
     margin: 2em;
     margin-left: 0;
     padding: 0;
@@ -288,11 +288,11 @@ h1, h2 {
 
 #profileSkillsUnderline {
 	margin-top: 0.5rem;
-	width: 7rem;
+	width: 8rem;
 	float: left;
     display: block;
     border: 0;
-    border-bottom: 1.75px solid #364652;
+    border-bottom: 1.8px solid #364652;
     margin-bottom: 0;
 }
 
@@ -300,25 +300,32 @@ h1, h2 {
 	padding-bottom: 5rem;
 }
 
-#skillsRow .fab {
+#skillIcon {
     font-size: 3rem;
-    margin: 1.5rem;
-    color: #F2F4F3;
-    
-    
+    margin: 2rem;
+	color: #F2F4F3;
 }
 
 
 /* Project 
 -----------------------------*/
 #Projects {
-    padding: 10px;
-    margin-bottom: 2em;
+    margin-bottom: 5rem;
 }
 
 #Projects h1 {
-    margin-top: 1em;
+    padding-top: 2rem;
     text-align: center;
+}
+
+#projectHeaderUnderline {
+	width: 15rem;
+    /* display: block; */
+    height: 2px;
+    border: 0;
+    border-top: 3px solid #364652;
+    margin: 2em auto 4rem;
+    padding: 0;
 }
 
 .figure-caption {
@@ -326,12 +333,19 @@ h1, h2 {
     margin-bottom: 1em;
 }
 
+#projectIconsRow {
+	padding: 1em;
+}
+
+
 #Projects img {
-    padding: 0.5rem;
-    padding-bottom: 3rem;
+	/*img starts at size: 739px x 531px*/
+    padding: 0.1rem;
+    margin-bottom: 3rem;
     position: relative;
     text-align: center;
-    color: #888;
+	color: #888;
+	border: 1px inset black;
     transition: transform 1s;
 }
 
@@ -341,10 +355,10 @@ h1, h2 {
     -webkit-transform: scale(1.07); 
 }
 
+
 /* Contact Info
 -----------------------------*/
 #Contact {
-	/* text-align: center; */
 	background-color: #212227;
 	padding-bottom: 5rem;
 }
@@ -352,16 +366,15 @@ h1, h2 {
 #Contact h1 {
 	color: #F2F4F3;
 	text-align: center;
-	/* font-family: 'Fredericka the Great', cursive; */
 	padding-top: 2rem;
 }
 
 #contactHeaderUnderline {
-	width: 15rem;
+	width: 19rem;
 	display: block;
 	height: 2px;
 	border: 0;
-	border-top: 2px solid #5E503F;
+	border-top: 3px solid #5E503F;
 	margin: 2em auto;
 	padding-bottom: 2rem;
 }
@@ -411,6 +424,14 @@ h1, h2 {
 }
 
 
+/*WeatherWidget in Modal pop-up
+-------------------------------*/
+#widgetCol  a{
+	height: 100%;
+	width: 300px;
+	margin-left: 4.5rem;
+}
+
 
 /* Footer
 -----------------------------*/
@@ -418,31 +439,30 @@ h1, h2 {
 	background-color: #364652; 
 	color: #212227;
 	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 0.2em;
+	padding-bottom: 0.5em;
 }
 
-#Footer i {
+#socialIcons {
 	font-size: 3rem;
 	color:#F2F4F3;
-	padding: 1rem;
-	margin: 1rem auto 1rem;
+	padding: 0.5rem;
+	margin: 0.5rem 1rem;
 	transition: color 0.5s;
     display: inline-block;
     
 }
 
-#Footer i:hover {
+#socialIcons:hover {
     color: #005B87;
-    
 }
 
-#Footer a{
+#copyrightDate {
     color: #F2F4F3;
     transition: color 0.5s;
 }
 
-#Footer a:hover {
+#copyrightDate:hover {
     color: #005B87;
     text-decoration: none;
 }
@@ -452,7 +472,6 @@ h1, h2 {
 }
 
 
-
 /* Responsive
 -----------------------------*/
 @media only screen and (max-width : 768px) {
@@ -460,3 +479,10 @@ h1, h2 {
 		font-size: 3em;
 	}
 }
+
+/* @media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+} */
+
