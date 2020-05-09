@@ -469,8 +469,8 @@ visibility: hidden;
     text-decoration: none;
 }
 
-#Footer > p:first-of-type {
-    margin-top: 1.4em;
+#Footer p {
+    margin-top: 1.2em;
 }
 
 
