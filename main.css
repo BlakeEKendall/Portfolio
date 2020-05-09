@@ -32,6 +32,9 @@ h1, h2 {
     margin: 0;
 }
 
+a:hover {
+	text-decoration: none;
+}
 
 /* Navigation
 ------------------------------*/
@@ -245,7 +248,7 @@ visibility: hidden;
 #myResume {
     color: #005B87;
     background-color: #F2F4F3;
-    text-decoration: none;
+    /* text-decoration: none; */
     padding: 6px;
     border-radius: 5px;
     transition: color 0.5s;
@@ -333,7 +336,7 @@ visibility: hidden;
     margin-bottom: 1em;
 }
 
-#projectIconsRow {
+#projectImagesRow {
 	padding: 1em;
 }
 
@@ -443,22 +446,19 @@ visibility: hidden;
 	padding-bottom: 1em;
 }
 
+#footerIconRow {
+	padding: 1em;
+}
 
 #socialIcons {
-	font-size: 3em;
+	font-size: 3rem;
+	margin: 1rem;
 	color:#F2F4F3;
-	padding: 0.5rem;
-	
 	transition: color 0.5s;
 }
 
 #socialIcons:hover {
 	color: #005B87;
-	text-decoration: none;
-}
-
-#socialIcons i {
-	margin: 1rem 1rem;
 }
 
 #copyrightDate {
@@ -468,7 +468,6 @@ visibility: hidden;
 
 #copyrightDate:hover {
     color: #005B87;
-    text-decoration: none;
 }
 
 #Footer p {
