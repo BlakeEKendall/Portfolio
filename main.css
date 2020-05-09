@@ -439,8 +439,8 @@ visibility: hidden;
 	background-color: #364652; 
 	color: #212227;
 	text-align: center;
-	padding-top: 0.2em;
-	padding-bottom: 0.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 #socialIcons {
@@ -451,7 +451,7 @@ visibility: hidden;
 	font-size: 3em;
 	color:#F2F4F3;
 	padding: 0.5rem;
-	margin: 0.6rem 1rem;
+	margin: 1rem 1rem;
 	transition: color 0.5s;
 }
 
