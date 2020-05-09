@@ -55,7 +55,6 @@ h1, h2 {
 }
 
 .nav-item:hover {
-    color: #5E503F;
     background-color: #364652;
     border-radius: 4px;
     transform: scale(1.07); 
@@ -64,8 +63,29 @@ h1, h2 {
 }
 
 .nav-item {
+	padding: auto;
     margin: auto 1.5em;
 }
+
+/* .btn-dark {
+	font-size: 1em;
+	margin: auto 1.5em;
+	border: none;
+	background-color: transparent;
+} */
+
+/* .btn-dark:hover {
+    background-color: #364652;
+    border-radius: 4px;
+    transform: scale(1.07); 
+    -ms-transform: scale(1.07); 
+    -webkit-transform: scale(1.07); 
+}
+
+.btn-dark:visited {
+	border: none;
+	background-color: transparent;
+} */
 
 /*added 5-04-2020*/
 /*keep navbar from hiding section titles*/
@@ -263,8 +283,8 @@ visibility: hidden;
 #myResume:link,
 #myResume:visited {
 	opacity: 1;
-	color: #F2F4F3;
-	background-color: #212227;
+	/* color: #F2F4F3;
+	background-color: #212227; */
 }
 
 #myResume:hover,
@@ -433,7 +453,13 @@ visibility: hidden;
 	box-shadow: 1px solid #444;
 }
 
+/*WeatherWidget*/
 
+#widgetCol  a{
+	height: 100%;
+	width: 300px;
+	margin-left: 4.5rem;
+}
 
 /* Footer
 -----------------------------*/
