@@ -331,9 +331,13 @@ visibility: hidden;
     padding: 0;
 }
 
+.figure {
+	margin-bottom: 1rem;
+}
+
 .figure-caption {
     font-size: 1.3em;
-    margin-bottom: 1em;
+    margin-bottom: 2rem;
 }
 
 #projectImagesRow {
