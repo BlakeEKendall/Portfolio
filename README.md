@@ -1,6 +1,12 @@
 # Portfolio
 Personal Portfolio created for Gold Badge - Eleven Fifty Academy project
 
+v2.1 - Updated with final Blue Badge and Red Badge projects on 7/28/2020
+New features include:
+1. Added final Red Badge project (Shelfish.MVC) image and link to projects section.
+2. Added final Blue Badge project (GameAPI) image and link to projects section.
+3. Updated wording and skills in my profile description, some text sizing tweaked for readability.
+
 
 V2.0 - Finalized for Blue Badge update on 5-06-2020
 New features include: 
