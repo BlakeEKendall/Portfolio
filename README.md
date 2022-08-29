@@ -1,6 +1,8 @@
 # Portfolio
 Personal Portfolio created for Gold Badge - Eleven Fifty Academy project
 
+V2.2 - Updated with 2022 version of my resume, removed old version of resume. 
+
 v2.1 - Updated with final Blue Badge and Red Badge projects on 7/28/2020
 New features include:
 1. Added final Red Badge project (Shelfish.MVC) image and link to projects section.
