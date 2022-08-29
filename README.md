@@ -1,7 +1,7 @@
 # Portfolio
 Personal Portfolio created for Gold Badge - Eleven Fifty Academy project
 
-V2.2 - Updated with 2022 version of my resume, removed old version of resume. 
+V2.2 - Updated with 2022 version of my resume, removed old version of resume. Updated About Me section to reflect current self-study track and current day job.
 
 v2.1 - Updated with final Blue Badge and Red Badge projects on 7/28/2020
 New features include:
