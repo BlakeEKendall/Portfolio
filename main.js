@@ -2,7 +2,7 @@
 
 var urls = [
     "https://xkcd.com/",
-    'https://io9.gizmodo.com/',
+    'https://gizmodo.com/io9/',
     'https://www.penny-arcade.com/',
     'https://www.tor.com/',
     'https://create.adobe.com/2020/04/06/coloring_book_alphabet.html',
@@ -10,7 +10,7 @@ var urls = [
     'http://www.welcometonightvale.com/',
     'https://www.astonishinglegends.com/',
     'http://journal.neilgaiman.com/',
-    'https://www.youtube.com/watch?v=U76nIDJQcxQ&list=PLbp_QhwRhV_wajfL7MFgH3tFVgcy3M6ss'
+    'https://www.youtube.com/c/TheCrafsMan/featured/'
 ];
 
 function goRandom() {
